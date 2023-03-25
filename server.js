@@ -21,8 +21,6 @@ if(process.env.NODE_ENV === 'development') {
 
 app.use('/api/v1/transactions', transactions);
 
-app.use('/hello', "transactions");
-
 if(process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 
